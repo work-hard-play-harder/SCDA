@@ -13,7 +13,7 @@ virtualenv >= 16.4.3
 ```
 
 ### Setup
-Activate virtual environment
+Create virtual environment
 ```
 git clone https://github.com/shilab/SCDA.git
 cd SCDA
