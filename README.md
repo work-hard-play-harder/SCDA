@@ -24,7 +24,7 @@ source venv/bin/activate
 
 Install requirment dependents
 ```
-pip install numpy tensorflow sklearn pandas jupyter matplotlib
+pip install tensorflow sklearn pandas jupyter matplotlib
 ```
 
 ### Running
