@@ -4,7 +4,7 @@ Genotype imputation, where missing genotypes can be computationally imputed, is 
 
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 ```
@@ -28,7 +28,7 @@ pip install numpy tensorflow sklearn pandas jupyter matplotlib
 ```
 
 ### Running
-1. Unzip the data file in data folder
+1. Unzip the data files in data folder
 2. Launch Jupyter notebook
 ```
 jupyter notebook
