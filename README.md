@@ -8,8 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 ```
-Python3.6
-
+Python3.6 
 virtualenv >= 16.4.3
 ```
 
@@ -28,7 +27,7 @@ Install requirment dependents
 pip install numpy tensorflow sklearn pandas jupyter matplotlib
 ```
 
-Running
+### Running
 Launch Jupyter notebook
 ```
 jupyter notebook
