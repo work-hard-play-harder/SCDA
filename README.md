@@ -28,7 +28,8 @@ pip install numpy tensorflow sklearn pandas jupyter matplotlib
 ```
 
 ### Running
-Launch Jupyter notebook
+1. Unzip the data file in data folder
+2. Launch Jupyter notebook
 ```
 jupyter notebook
 ```
