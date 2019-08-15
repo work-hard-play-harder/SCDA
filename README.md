@@ -38,15 +38,13 @@ To demonstrate the SCDA's usage for practical purpose, we provide a case study f
 1. Input file format
 The input file should be CSV format with 'tab' delimiter. The header is SNPs' position, and the first column is sample ID. This format can be easily generated from VCF by removing the first 8 lines and transferring the row and column. As 
 
-
-|   SAMID  |    33070_chrI_33070_A_T   | 33147_chrI_33147_G_T shape | 33152_chrI_33152_T_C |  33200_chrI_33200_C_T |
-|:-------:|:-----------:|:------------:|:-------:|:-:|
-| 01_01 |    1    |     1    |    1    |  1 |
-| 01_02 | 1 |     1    |    1    |  1 |
-| 01_03 |   2   |    2    |    2    |  2 |
-| 01_04 |    1    |     1     |    1    |  1 |
-| 01_06 |    2    |    2    |    2    |  2 |
-
+| SAMID | chrI_33070 | chrI_33147 | chrI_33152 | chrI_33200 |
+|:-----:|:----------:|:----------:|:----------:|:----------:|
+| 01_01 |      1     |      1     |      1     |      1     |
+| 01_02 |      1     |      1     |      1     |      1     |
+| 01_03 |      2     |      2     |      2     |      2     |
+| 01_04 |      1     |      1     |      1     |      1     |
+| 01_06 |      2     |      2     |      2     |      2     |
 
 2. For the training process
 
