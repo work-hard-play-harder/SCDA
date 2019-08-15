@@ -2,7 +2,7 @@
 Genotype imputation, where missing genotypes can be computationally imputed, is an essential tool in genomic analysis ranging from genome wide associations to phenotype prediction. Traditional genotype imputation methods are typically based on Hidden Markov Models (HMMs) and are usually computationally expensive. Deep learning-based methods have been recently reported to nicely address the missing data problems in various fields. To explore the performance of deep learning for genotype imputation, in this study we propose a deep model called a Sparse Convolutional Denoising Autoencoder (SCDA) to impute missing genotypes. We constructed the SCDA model by using a convolutional layer that can extract various correlation or linkage patterns in the genotype data and applying a sparse weight matrix resulted from the L1 regularization to handle high dimensional data. We comprehensively evaluated the performance of the SCDA model in different scenarios for genotype imputation on the yeast and human genotype data respectively. Our results showed that SCDA has strong robustness and significantly outperforms three popular reference-free imputation methods including row average, k-nearest neighbors and singular-value decomposition. This study thus points to another novel application of deep learning models for missing data imputation in genomic studies. 
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. The code is performed in a Jupyter Notebook, because Jupyter Notebook provide an interactivly develop and test manner, which is very convient for practical purpose. 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. The code is performed in a Jupyter Notebook, because Jupyter Notebook provides an interactivly develop and test manner, which is very convient for practical purpose. 
 
 ### Prerequisites
 ```
@@ -37,56 +37,16 @@ To demonstrate the SCDA's usage for practical purpose, we provide a case study f
 
 1. Input file format
 The input file should be CSV format with 'tab' delimiter. The header is SNPs' position, and the first column is sample ID. This format can be easily generated from VCF by removing the first 8 lines and transferring the row and column. As 
-<font> size= '10'>
-<table border="1">
-  <thead>
-    <tr style="text-align: right">
-      <th>SAMID</th>
-      <th>33070_chrI_33070_A_T</th>
-      <th>33147_chrI_33147_G_T</th>
-      <th>33152_chrI_33152_T_C</th>
-      <th>33200_chrI_33200_C_T</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>01_01</th>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>01_02</th>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>01_03</th>
-      <td>2</td>
-      <td>2</td>
-      <td>2</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>01_04</th>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>01_06</th>
-      <td>2</td>
-      <td>2</td>
-      <td>2</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-</table>
-</font>
+
+
+|   SAMID  |    33070_chrI_33070_A_T   | 33147_chrI_33147_G_T shape | 33152_chrI_33152_T_C |  33200_chrI_33200_C_T |
+|:-------:|:-----------:|:------------:|:-------:|:-:|
+| 01_01 |    1    |     1    |    1    |  1 |
+| 01_02 | 1 |     1    |    1    |  1 |
+| 01_03 |   2   |    2    |    2    |  2 |
+| 01_04 |    1    |     1     |    1    |  1 |
+| 01_06 |    2    |    2    |    2    |  2 |
+
 
 2. For the training process
 
