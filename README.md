@@ -34,6 +34,9 @@ pip install tensorflow sklearn pandas jupyter matplotlib
 jupyter notebook
 ```
 
+### Case study
+To demonstrate the SCDA's usage for practical purpose, we provide a case study for yeast genotype imputation.
+
 
 ## Citation
 Junjie Chen, Xinghua Shi\*. Sparse Convolutional Denoising Autoencoders for Genotype Imputation. *Genes*, 2019.
