@@ -38,7 +38,8 @@ jupyter notebook
 To demonstrate the SCDA's usage for practical purpose, we provide a case study for yeast genotype imputation.
 
 1. Input file format
-<table border="1" class="dataframe">
+The input file should be a 
+<table border="1">
   <thead>
     <tr style="text-align: right">
       <th>SAMID</th>
