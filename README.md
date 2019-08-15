@@ -26,17 +26,18 @@ pip install tensorflow sklearn pandas jupyter matplotlib
 ```
 
 ### Run
-1. Unzip the data files in data folder
-2. Launch Jupyter notebook
+1. Unzip the data files in data folder 
+2. Launch Jupyter notebook 
+``` 
+jupyter notebook 
 ```
-jupyter notebook
-```
+which will launch a browser. If you have any problem, please reference Jupyter notebook [offical document](https://jupyter-notebook.readthedocs.io/en/stable/)
 
-## Case study
-To demonstrate the SCDA's usage for practical purpose, we provide a case study for yeast genotype imputation.
+## Case study 
+To demonstrate the SCDA's usage, we provide a case study for yeast genotype imputation.
 
-1. Input file format
-The input file should be CSV format with 'tab' delimiter. The header is SNPs' position, and the first column is sample ID. This format can be easily generated from VCF by removing the first 8 lines and transferring the row and column. As 
+### Input file format 
+The input file should be CSV format with 'tab' delimiter. The header is SNPs' position, and the first column is sample ID. This format can be easily generated from VCF file by removing the first 8 lines and transferring the row and column, as following table shown.
 
 | SAMID | chrI_33070 | chrI_33147 | chrI_33152 | chrI_33200 |
 |:-----:|:----------:|:----------:|:----------:|:----------:|
@@ -46,11 +47,11 @@ The input file should be CSV format with 'tab' delimiter. The header is SNPs' po
 | 01_04 |      1     |      1     |      1     |      1     |
 | 01_06 |      2     |      2     |      2     |      2     |
 
-2. For the training process
+### For the training process 
+Click `SCDA_train.ipynb` in brower. 
 
 
-
-3. For the imputation process
+### For the imputation process
 
 
 
