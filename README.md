@@ -39,7 +39,6 @@ To demonstrate the SCDA's usage, we provide a case study for yeast genotype impu
 ### Input file format 
 The input file should be CSV format with 'tab' delimiter. The header is SNPs' position, and the first column is sample ID. This format can be easily generated from VCF file by removing the first 8 lines and transferring the row and column, as following table shown.
 
-* { font-size: 9pt; }
 | SAMID | chrI_33070 | chrI_33147 | chrI_33152 | chrI_33200 |
 |:-----:|:----------:|:----------:|:----------:|:----------:|
 | 01_01 |      1     |      1     |      1     |      1     |
