@@ -25,38 +25,37 @@ Install requirment dependents
 pip install tensorflow sklearn pandas jupyter matplotlib
 ```
 
-### Run
-1. Unzip the data files in data folder 
-2. Launch Jupyter notebook 
+### Launch Jupyter
+Launch Jupyter notebook  by 
 ``` 
 jupyter notebook 
 ```
 which will launch a browser. If you have any problem, please reference Jupyter notebook [offical document](https://jupyter-notebook.readthedocs.io/en/stable/)
 
 ## Case study 
-To demonstrate the SCDA's usage, we provide a case study for yeast genotype imputation.
+To demonstrate the SCDA's usage, we provide a case study for yeast genotype imputation, which achieves above 99% accuracy.
 
 ### Input file format 
-The input file should be CSV format with 'tab' delimiter. The header is SNPs' position, and the first column is sample ID. This format can be easily generated from VCF file by removing the first 8 lines and transferring the row and column, as following table shown.
+The input file should be CSV format with 'tab' delimiter. The header is SNPs' position, and the first column is sample ID, as following table shown. This format can be easily generated from VCF file by removing the first 8 lines and transferring the row and column.
 
 | SAMID | chrI_33070 | chrI_33147 | chrI_33152 | chrI_33200 |
 |:-----:|:----------:|:----------:|:----------:|:----------:|
-| 01_01 |      1     |      1     |      1     |      1     |
-| 01_02 |      1     |      1     |      1     |      1     |
-| 01_03 |      2     |      2     |      2     |      2     |
-| 01_04 |      1     |      1     |      1     |      1     |
-| 01_06 |      2     |      2     |      2     |      2     |
+| 01_01 |      1     |     -1     |      1     |      1     |
+| 01_02 |      1     |      1     |     -1     |      1     |
+| 01_03 |     -1     |     -1     |      1     |      1     |
+| 01_04 |      1     |     -1     |     -1     |     -1     |
+| 01_06 |     -1     |      1     |     -1     |      1     |
 
+where 
 
 ### For the training process 
-Click `SCDA_train.ipynb` in brower. 
+1. Unzip the `training_data` file in data folder 
+2. Click `SCDA_train.ipynb` in brower. Run the cells one by one, or run the whole notebook in once. It will load training data, train a SCDA model and save the trained model.
 
 
 ### For the imputation process
-
-
-
-
+1. Unzip the `testin_data` file in data folder 
+2. Click `SCDA_test.ipynb` in brower. Run the cells one by one, or run the whole notebook in once. It will load training data, train a SCDA model and save the trained model.
 
 
 ## Citation
