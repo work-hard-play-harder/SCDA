@@ -40,13 +40,13 @@ The input file should be CSV format with 'tab' delimiter. The header is SNPs' po
 
 | SAMID | chrI_33070 | chrI_33147 | chrI_33152 | chrI_33200 |
 |:-----:|:----------:|:----------:|:----------:|:----------:|
-| 01_01 |      1     |     -1     |      1     |      1     |
-| 01_02 |      1     |      1     |     -1     |      1     |
-| 01_03 |     -1     |     -1     |      1     |      1     |
-| 01_04 |      1     |     -1     |     -1     |     -1     |
-| 01_06 |     -1     |      1     |     -1     |      1     |
+| 01_01 |      1     |      2     |      0     |      1     |
+| 01_02 |      1     |      1     |      2     |      1     |
+| 01_03 |      2     |      0     |      1     |      1     |
+| 01_04 |      1     |      2     |      0     |      2     |
+| 01_06 |      0     |      1     |      2     |      0     |
 
-where 
+where 1s and 2s reprensent the variants from laboratory strain (BY) and an isolate from a vineyard (RM), respectively. Os reprensent the mssing SNPs. 
 
 ### For the training process 
 1. Unzip the `training_data` file in data folder 
