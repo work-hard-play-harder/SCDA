@@ -26,7 +26,7 @@ pip install tensorflow sklearn pandas jupyter matplotlib
 ```
 
 ### Launch Jupyter
-Launch Jupyter notebook  by 
+Launch Jupyter notebook by 
 ``` 
 jupyter notebook 
 ```
@@ -47,6 +47,18 @@ The input file should be CSV format with 'tab' delimiter. The header is SNPs' po
 | 01_06 |      0     |      1     |      2     |      0     |
 
 where 1s and 2s reprensent the variants from laboratory strain (BY) and an isolate from a vineyard (RM), respectively. 0s reprensent the mssing SNPs. Different species may have different encoding for their variants. Make sure the encodeing starts with 1, and 0s represent missing values. 
+
+### Output file format
+The predict results contains the probilities of each label 1, 2 for each sample, as the following table shown.
+
+|    1     |      2      |
+|:-----:|:----------:|
+| 0.999944 | 5.559894e-5 |
+| 1.9059176e-05 |      0.9999809     |
+| 0.9999864 |      1.3582917e-05    |
+| 0.00040740182 |      0.9995926     |
+| 0.99998647 |      1.354419e-05     |
+
 
 ### For the training process 
 1. Unzip the `yeast_genotype_train.txt.zip` file in data folder where you launched Jupyter Notebook.
