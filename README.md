@@ -52,7 +52,7 @@ where 1s and 2s reprensent the variants from laboratory strain (BY) and an isola
 The predict results contains the probilities of each label 1, 2 for each sample, as the following table shown.
 
 |    1     |      2      |
-|:-----:|:----------:|
+|:-----|:----------|
 | 0.999944 | 5.559894e-5 |
 | 1.9059176e-05 |      0.9999809     |
 | 0.9999864 |      1.3582917e-05    |
